@@ -1,0 +1,4 @@
+S1 sells to B1 in size of 500
+S1 sells to B2 in size of 300
+S1 sells to B3 in size of 200
+S2 sells to B3 in size of 200
