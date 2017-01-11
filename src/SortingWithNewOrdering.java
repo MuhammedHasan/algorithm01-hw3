@@ -29,7 +29,7 @@ class MyStringComparator implements Comparator<String> {
     @Override
     public int compare(String s, String t1) {
         for (int i = 0; i < Math.max(s.length(), t1.length()); i++) {
-            if (i >= t1.length() || i >= s.length()) return t1.length() - s.length();
+            if (i >= t1.length() || i >= s.length()) return s.length() - t1.length();
 
             int diff = this.mapping.get("" + s.charAt(i)) - this.mapping.get("" + t1.charAt(i));
             if (diff != 0) return diff;
